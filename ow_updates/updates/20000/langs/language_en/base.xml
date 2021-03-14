@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="base" label="Base" language_tag="en" language_label="English">
+    <key name="empty_slug_params">
+        <value>You must enter title to create slug</value>
+    </key>
+    <key name="form_validator_extension_error_message">
+        <value>Your file have wrong extension!</value>
+    </key>
+    <key name="form_validator_filesize_min_error_message">
+        <value>Your file have wrong size!</value>
+    </key>
+    <key name="form_file_upload_success">
+        <value>File uploaded!</value>
+    </key>
+    <key name="form_file_upload_error">
+        <value>Occurred error while uploading file!</value>
+    </key>
+    <key name="user_reactivation_mail_subject">
+        <value>Profile re-activation</value>
+    </key>
+    <key name="user_reactivation_mail_txt">
+        <value>Dear {$userName} your profile on {$site_name} is active again!</value>
+    </key>
+    <key name="user_reactivation_mail_html">
+        <value>Dear {$userName} your profile on {$site_name} is active again!</value>
+    </key>
+</prefix>

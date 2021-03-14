@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="localization" label="Localization" language_tag="en" language_label="English">
+    <key name="language">
+        <value>Language</value>
+    </key>
+    <key name="time">
+        <value>Time</value>
+    </key>
+    <key name="currency">
+        <value>Currency</value>
+    </key>
+    <key name="timezone">
+        <value>Timezone</value>
+    </key>
+    <key name="date_format">
+        <value>Date Format</value>
+    </key>
+    <key name="date_format_invitation">
+        <value>m/d/Y</value>
+    </key>
+    <key name="date_format_description">
+        <value>You can set date format. Legend: d - day (numer), l - day (name), m - month (number), F - month (name), Y - year. You can use delimiters.</value>
+    </key>
+    <key name="time_format">
+        <value>Time Format</value>
+    </key>
+    <key name="time_format_invitation">
+        <value>H:i</value>
+    </key>
+    <key name="time_format_description">
+        <value>You can set time format. Legend: H - hour, i - minutes, s - seconds. You can use delimiters.</value>
+    </key>
+    <key name="military_time">
+        <value>Military time</value>
+    </key>
+    <key name="relative_time">
+        <value>Use relative date/time</value>
+    </key>
+    <key name="relative_time_desc">
+        <value>"Yesterday, 5:31" instead of "June 1 '09, 5:31".</value>
+    </key>
+    
+    <key name="relative_time_range">
+        <value>Relative time range</value>
+    </key>
+    <key name="relative_time_range_desc">
+        <value>Date range to display relative time</value>
+    </key>
+    <key name="default_currency">
+        <value>Default currency</value>
+    </key>
+</prefix>

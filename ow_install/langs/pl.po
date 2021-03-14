@@ -1,0 +1,441 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2018-06-06 18:14+0200\n"
+"PO-Revision-Date: 2018-06-06 18:15+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pl_PL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: translate;__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: classes/view_renderer.php:58
+msgid "No template was provided for render!"
+msgstr "Nie wybrano żadnego szablonu!"
+
+#: components/steps.php:9 controllers/install.php:21
+msgid "Start"
+msgstr "Wprowadzenie"
+
+#: components/steps.php:10 controllers/install.php:27
+msgid "Server requirements"
+msgstr "Wymagania serwera"
+
+#: components/steps.php:11 controllers/install.php:157
+msgid "Site configuration"
+msgstr "Konfiguracja strony"
+
+#: components/steps.php:12 controllers/install.php:209
+msgid "Database configuration"
+msgstr "Konfiguracja bazy danych"
+
+#: components/steps.php:13 view/controllers/install_plugins.php:10
+msgid "Install"
+msgstr "Instalacja"
+
+#: components/steps.php:14 controllers/install.php:397
+msgid "Plugins"
+msgstr "Dodatki"
+
+#: components/steps.php:15
+msgid "Finish"
+msgstr "Zakończenie"
+
+#: controllers/install.php:11
+msgid "Instalation Oxwall Plus platform"
+msgstr "Instalacja platformy Oxwall Plus"
+
+#: controllers/install.php:37
+msgid "PHP version"
+msgstr "Wersja PHP"
+
+#: controllers/install.php:43
+msgid "cUrl"
+msgstr "cURL"
+
+#: controllers/install.php:43 controllers/install.php:49
+#: controllers/install.php:55 controllers/install.php:61
+#: controllers/install.php:67 controllers/install.php:73
+#: controllers/install.php:79 controllers/install.php:85
+#: controllers/install.php:91 controllers/install.php:97
+#: controllers/install.php:103 controllers/install.php:109
+#: controllers/install.php:115 controllers/install.php:121
+#: controllers/install.php:127 controllers/install.php:133
+#: controllers/install.php:149
+msgid "On"
+msgstr "Włączony"
+
+#: controllers/install.php:43 controllers/install.php:49
+#: controllers/install.php:55 controllers/install.php:61
+#: controllers/install.php:67 controllers/install.php:73
+#: controllers/install.php:79 controllers/install.php:85
+#: controllers/install.php:91 controllers/install.php:97
+#: controllers/install.php:103 controllers/install.php:109
+#: controllers/install.php:115 controllers/install.php:121
+#: controllers/install.php:127 controllers/install.php:133
+#: controllers/install.php:149
+msgid "Off"
+msgstr "Wyłączony"
+
+#: controllers/install.php:49
+msgid "mod_rewrite"
+msgstr "mod_rewrite"
+
+#: controllers/install.php:55
+msgid "fopen"
+msgstr "fopen"
+
+#: controllers/install.php:61
+msgid "register_globals"
+msgstr "register_globals"
+
+#: controllers/install.php:67
+msgid "safe_mode"
+msgstr "safe_mode"
+
+#: controllers/install.php:73
+msgid "suhosin"
+msgstr "suhosin"
+
+#: controllers/install.php:79
+msgid "PDO"
+msgstr "PDO"
+
+#: controllers/install.php:85
+msgid "mbstring"
+msgstr "mbstring"
+
+#: controllers/install.php:91
+msgid "zip"
+msgstr "zip"
+
+#: controllers/install.php:97
+msgid "zlib"
+msgstr "zlib"
+
+#: controllers/install.php:103
+msgid "FTP"
+msgstr "FTP"
+
+#: controllers/install.php:109
+msgid "JSON"
+msgstr "JSON"
+
+#: controllers/install.php:115
+msgid "DOM"
+msgstr "DOM"
+
+#: controllers/install.php:121
+msgid "mysql"
+msgstr "mysql"
+
+#: controllers/install.php:127
+msgid "Open SSL"
+msgstr "Open SSL"
+
+#: controllers/install.php:133
+msgid "GD"
+msgstr "GD"
+
+#: controllers/install.php:143
+msgid "GD Library version"
+msgstr "Wersja biblioteki GD"
+
+#: controllers/install.php:149
+msgid "GD FreeType support"
+msgstr "Wsparcie GD FreeType"
+
+#: controllers/install.php:259
+msgid ""
+"This database should be empty _especially_ if you try to reinstall Oxwall Plus."
+msgstr ""
+"Ta baza danych powinna być pusta jeśli chcesz ponownie zainstalować Oxwall Plus."
+
+#: controllers/install.php:262
+msgid "Could not connect to Database"
+msgstr "Nie można połączyć się z bazą danych"
+
+#: controllers/install.php:262
+msgid "Error: "
+msgstr "Błąd"
+
+#: controllers/install.php:277
+msgid "Installation"
+msgstr "Instalacja"
+
+#: controllers/install.php:343 controllers/install.php:346
+msgid "OK"
+msgstr "OK"
+
+#: controllers/install.php:349
+msgid "ERROR"
+msgstr "Błąd"
+
+#: controllers/install.php:438
+msgid "Installation complete"
+msgstr "Instalacja ukończona"
+
+#: view/controllers/install_db.php:6 view/controllers/install_site.php:5
+msgid ""
+"Please correct below errors before you can proceed with Oxwall Plus "
+"installation."
+msgstr ""
+"Proszę popraw poniższe błędy zanim będziesz mógł kontynuować instalację "
+"Oxwall Plus."
+
+#: view/controllers/install_db.php:11
+msgid "Please create a database and enter its details here."
+msgstr "Proszę stwórz bazę danych i podaj dane dostępowe do niej poniżej."
+
+#: view/controllers/install_db.php:17
+msgid "Database host"
+msgstr "Host bazy danych"
+
+#: view/controllers/install_db.php:20
+msgid ""
+"MySQL host and port (optionally). Example: <i>localhost</i> or "
+"<i>localhost:3307</i>"
+msgstr ""
+"Host MySQL i port (opcjonalnie). Przykład: <i>localhost</i> albo "
+"<i>localhost:3307</i>"
+
+#: view/controllers/install_db.php:24
+msgid "Database user"
+msgstr "Użytkownik bazy danych"
+
+#: view/controllers/install_db.php:30
+msgid "Database password"
+msgstr "Hasło użytkownika bazy danych"
+
+#: view/controllers/install_db.php:36
+msgid "Database name"
+msgstr "Nazwa bazy danych"
+
+#: view/controllers/install_db.php:42
+msgid "Table prefix"
+msgstr "Prefiks tabel"
+
+#: view/controllers/install_db.php:48 view/controllers/install_install.php:24
+#: view/controllers/install_install.php:63 view/controllers/install_intro.php:8
+#: view/controllers/install_requirements.php:24
+#: view/controllers/install_site.php:59
+msgid "Continue"
+msgstr "Dalej"
+
+#: view/controllers/install_finish.php:3
+msgid "Thank you for installation Oxwall Plus!"
+msgstr "Dziękujemy za zainstalowanie Oxwall Plus!"
+
+#: view/controllers/install_finish.php:4
+msgid ""
+"Congratulations! NeOxwall PlusxtWall is now installed and you can use all "
+"features our script. Good luck!"
+msgstr ""
+"Gratulacje! Oxwall Plus zostało zainstalowane i teraz możesz korzystać w "
+"wszystkich możliwości skryptu. Powodzenia!"
+
+#: view/controllers/install_finish.php:6
+msgid "Create a cron job that runs <b>ow_cron/run.php</b> once a minute"
+msgstr ""
+"Stwórz zadanie cron, które będzie uruchamiać <b>ow_cron/run.php</b> co "
+"minutę."
+
+#: view/controllers/install_finish.php:9 view/controllers/install_finish.php:12
+msgid "or"
+msgstr "albo"
+
+#: view/controllers/install_finish.php:17
+msgid "Please remove <b>ow_install/</b> folder and refresh this page"
+msgstr "Proszę usuń folder <b>ow_install/</b> i odśwież tę stronę."
+
+#: view/controllers/install_finish.php:19
+msgid "Remove folder manually and continue"
+msgstr "Usuwam folder ręcznie i kontynuuję"
+
+#: view/controllers/install_finish.php:21
+msgid "Go to main site"
+msgstr "Idź do strony głównej"
+
+#: view/controllers/install_install.php:5
+msgid "Directory"
+msgstr "Folder"
+
+#: view/controllers/install_install.php:6
+msgid "Required chmod"
+msgstr "Wymagane uprawnienia"
+
+#: view/controllers/install_install.php:7
+msgid "Current chmod"
+msgstr "Obecne uprawnienia"
+
+#: view/controllers/install_install.php:27
+#: view/controllers/install_install.php:66
+msgid ""
+"Please check above errors before you can proceed with Oxwall Plus "
+"installation."
+msgstr ""
+"Proszę sprawdź błędy powyżej zanim będziesz mógł kontynuować instalację "
+"Oxwall Plus."
+
+#: view/controllers/install_install.php:29
+#: view/controllers/install_install.php:68
+#: view/controllers/install_requirements.php:29
+msgid "Refresh"
+msgstr "Odśwież"
+
+#: view/controllers/install_install.php:34
+msgid ""
+"Please copy and paste this code replacing the existing one into "
+"<b>ow_includes/config.php</b> file."
+msgstr ""
+"Proszę skopiuj i wklej poniższy kod zastępując istniejący w pliku "
+"<b>ow_includes/config.php</b>."
+
+#: view/controllers/install_install.php:35
+msgid "Make sure you do not have any whitespace before and after the code."
+msgstr "Upewnij się, że nie masz żadnych spacji przed i po poniższym kodzie."
+
+#: view/controllers/install_install.php:40
+msgid "I saved config file and want install datatables"
+msgstr ""
+"Zapisałem plik konfiguracyjny i chcę zainstalować tabele w bazie danych"
+
+#: view/controllers/install_install.php:46
+msgid "Table"
+msgstr "Tabela"
+
+#: view/controllers/install_install.php:47
+msgid "Status"
+msgstr "Status"
+
+#: view/controllers/install_intro.php:3
+msgid "Thank you for select Oxwall Plus!"
+msgstr "Dziękujemy za wybranie Oxwall Plus!"
+
+#: view/controllers/install_intro.php:4
+msgid ""
+"Oxwall Plus is unbelievably flexible and easy to use PHP/MySQL social "
+"networking software platform. Oxwall Plus is used for a wide range of "
+"projects starting from family sites and custom social networks to "
+"collaboration tools and enterprise community solutions."
+msgstr ""
+"Oxwall Plus to niewiarygodnie elastyczna i łatwa do użycia platforma do "
+"stworzenia serwisu społecznościowego wykorzystującego technologię PHP i "
+"MySQL. Oxwall Plus jest wykorzystywany do szerokiej gamy projektów, "
+"począwszy od rodzinnych stron i platform społecznościowych po zaawansowane "
+"technologicznie rozwiązania."
+
+#: view/controllers/install_intro.php:5
+msgid "Go ahead and complete instalation Plus."
+msgstr "Kontynuuj i ukończ instalację platformy Oxwall Plus."
+
+#: view/controllers/install_plugins.php:1
+msgid "We thought you'd also like to throw in some plugins while you're at it:"
+msgstr "Myślimy, że chciałbyś również zainstalować pewne dodatki:"
+
+#: view/controllers/install_plugins.php:7
+msgid "Plugin"
+msgstr "Dodatek"
+
+#: view/controllers/install_plugins.php:8
+msgid "Description"
+msgstr "Opis"
+
+#: view/controllers/install_plugins.php:9
+msgid "Version"
+msgstr "Wersja"
+
+#: view/controllers/install_plugins.php:21
+msgid "INSTALLED"
+msgstr "ZAINSTALOWANO"
+
+#: view/controllers/install_plugins.php:35
+msgid ""
+"Occurred error when we try installed above plugin, please try again or "
+"uncheck this plugins."
+msgstr ""
+"Wystąpił błąd jak próbowaliśmy zainstalować powyższe dodatki, spróbuj "
+"ponownie albo odznacz dodatki, które powodują błędy."
+
+#: view/controllers/install_plugins.php:40
+msgid "Install selected plugins"
+msgstr "Zainstaluj wybrane dodatki"
+
+#: view/controllers/install_requirements.php:4
+msgid "Requirement"
+msgstr "Wymagania"
+
+#: view/controllers/install_requirements.php:5
+msgid "Min. value"
+msgstr "Min. wartość"
+
+#: view/controllers/install_requirements.php:6
+msgid "Your value"
+msgstr "Twoja wartość"
+
+#: view/controllers/install_requirements.php:21
+msgid "Congratulations you can install Oxwall Plus on your server!"
+msgstr "Gratulacje możesz zainstalować Oxwall Plus na swoim serwerze!"
+
+#: view/controllers/install_requirements.php:27
+msgid ""
+"Please correct above errors before you can proceed with Oxwall Plus "
+"installation."
+msgstr ""
+"Proszę popraw powyższe błędy zanim będziesz mógł kontynuować instalację "
+"Oxwall Plus."
+
+#: view/controllers/install_site.php:9
+msgid "Site settings"
+msgstr "Ustawienia strony"
+
+#: view/controllers/install_site.php:11
+msgid "Site title"
+msgstr "Tytuł strony"
+
+#: view/controllers/install_site.php:17
+msgid "Site tagline"
+msgstr "Slogan strony"
+
+#: view/controllers/install_site.php:20
+msgid "Catchy one-stringed site description (optional)"
+msgstr "Chwytliwe hasło promujące stronę (opcjonalnie)"
+
+#: view/controllers/install_site.php:24
+msgid "Site url"
+msgstr "Adres strony"
+
+#: view/controllers/install_site.php:30
+msgid "Site path"
+msgstr "Bezwzględna ścieżka"
+
+#: view/controllers/install_site.php:37
+msgid "Administrator account"
+msgstr "Konto administratora"
+
+#: view/controllers/install_site.php:39
+msgid "Admin e-mail"
+msgstr "Adres e-mail"
+
+#: view/controllers/install_site.php:45
+msgid "Admin username"
+msgstr "Nazwa użytkownika"
+
+#: view/controllers/install_site.php:48
+msgid "Letters and digits only"
+msgstr "Tylko litery i cyfry"
+
+#: view/controllers/install_site.php:52
+msgid "Admin password"
+msgstr "Hasło"
+
+#: view/controllers/install_site.php:55
+msgid "From 2 to 12 characters"
+msgstr "Od 2 do 12 znaków"

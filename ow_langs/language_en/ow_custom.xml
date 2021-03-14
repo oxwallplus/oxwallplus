@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="ow_custom" label="Custom" language_tag="en" language_label="English">
+    <key name="mobile_page_14788567">
+        <value>Terms of Use</value>
+    </key>
+    <key name="mobile_page_14788567_content">
+        <value>Your terms of use here.</value>
+    </key>
+    <key name="mobile_page_14788567_title">
+        <value>Terms of Use</value>
+    </key>
+    <key name="mobile_terms_of_use">
+        <value>Terms of Use</value>
+    </key>
+    <key name="mobile_terms_of_use_content">
+        <value>Your Terms of Use here</value>
+    </key>
+    <key name="mobile_terms_of_use_title">
+        <value>Terms of Use</value>
+    </key>
+</prefix>

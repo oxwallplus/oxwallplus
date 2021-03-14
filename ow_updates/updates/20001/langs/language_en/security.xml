@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="security" label="Security" language_tag="en" language_label="English">
+    <key name="enable_captcha">
+        <value>Enable Captcha</value>
+    </key>
+    <key name="captcha_label">
+        <value>Enter Captcha</value>
+    </key>
+    <key name="captcha_service">
+        <value>Captcha service</value>
+    </key>
+    <key name="recaptcha_settings">
+        <value>reCaptcha settings</value>
+    </key>
+    <key name="recaptcha_site_key">
+        <value>Site Key</value>
+    </key>
+    <key name="recaptcha_secret_key">
+        <value>Secret Key</value>
+    </key>
+    <key name="recaptcha_desc">
+        <value>You must register keys &lt;a href="%s" target="_blank"&gt;here&lt;/a&gt;</value>
+    </key>
+    <key name="admin_title">
+        <value>Security</value>
+    </key>
+    <key name="sidebar_menu_security">
+        <value>Security</value>
+    </key>
+    <key name="securimage_settings">
+        <value>Securimage settings</value>
+    </key>
+    <key name="string_captcha">
+        <value>String captcha</value>
+    </key>
+    <key name="math_captcha">
+        <value>Math captcha</value>
+    </key>
+    <key name="word_captcha">
+        <value>Word captcha</value>
+    </key>
+    <key name="random_captcha">
+        <value>Random captcha</value>
+    </key>
+    <key name="captcha_length">
+        <value>Captcha chars length</value>
+    </key>
+    <key name="captcha_lines">
+        <value>Captcha lines on image</value>
+    </key>
+    <key name="captcha_signature">
+        <value>Signature on image</value>
+    </key>
+</prefix>

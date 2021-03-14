@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="core" label="Core" language_tag="en" language_label="English">
+    <key name="seconds">
+        <value>%d seconds</value>
+    </key>
+    <key name="minute">
+        <value>minute</value>
+    </key>
+    <key name="minutes">
+        <value>%d minutes</value>
+    </key>
+    <key name="hour">
+        <value>hour</value>
+    </key>
+    <key name="hours">
+        <value>%d hours</value>
+    </key>
+    <key name="days">
+        <value>%d days</value>
+    </key>
+    <key name="day">
+        <value>day</value>
+    </key>
+    <key name="ago">
+        <value>ago</value>
+    </key>
+    <key name="today">
+        <value>Today</value>
+    </key>
+    <key name="yesterday">
+        <value>Yesterday</value>
+    </key>
+    <key name="week">
+        <value>week</value>
+    </key>
+    <key name="weeks">
+        <value>%d weeks</value>
+    </key>
+    <key name="month">
+        <value>month</value>
+    </key>
+    <key name="months">
+        <value>%d months</value>
+    </key>
+    <key name="invalid_timestamp">
+        <value>Invalid timestamp</value>
+    </key>
+</prefix>

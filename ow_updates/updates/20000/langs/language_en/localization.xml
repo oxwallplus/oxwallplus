@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="security" label="Security" language_tag="en" language_label="English">
+    <key name="admin_title">
+        <value>Security</value>
+    </key>
+    <key name="sidebar_menu_security">
+        <value>Security</value>
+    </key>
+</prefix>

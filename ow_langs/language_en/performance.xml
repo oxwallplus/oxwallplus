@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="performance" label="Performance" language_tag="en" language_label="English">
+    <key name="admin_title">
+        <value>Performance</value>
+    </key>
+    <key name="sidebar_menu_performance">
+        <value>Performance</value>
+    </key>
+    <key name="enable_cache">
+        <value>Enable cache</value>
+    </key>
+    <key name="db_cache">
+        <value>MySQL Cache</value>
+    </key>
+    <key name="file_cache">
+        <value>File cache</value>
+    </key>
+    <key name="cache_type">
+        <value>Cache method</value>
+    </key>
+    <key name="admin_title">
+        <value>Performance</value>
+    </key>
+    <key name="sidebar_menu_performance">
+        <value>Performance</value>
+    </key>
+    <key name="compress_js_files">
+        <value>Compress JS files</value>
+    </key>
+    <key name="compress_css_files">
+        <value>Compress CSS files</value>
+    </key>
+    <key name="storage_compressed_files">
+        <value>Storage compressed files</value>
+    </key>
+    <key name="enable_gzip_compress">
+        <value>GZip Compress</value>
+    </key>
+</prefix>
