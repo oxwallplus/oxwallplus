@@ -1,0 +1,18 @@
+<ul class="list-unstyled ps-0">
+    {foreach from=$menu key="key" item="category"}
+    <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded{if !$category.active} collapsed{/if}" data-bs-toggle="collapse" data-bs-target="#{$key}" aria-expanded="{if $category.active}true{else}false{/if}">
+            <i class="fa fa-{$category.icon}"></i> {$category.label}
+        </button>
+        <div class="collapse{if $category.active} show{/if}" id="{$key}">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                {foreach from=$category.items item="item"}
+                    <li class="ps-3 py-2">
+                        <a class="text-decoration-none" href="{$item->getUrl()}" class="link-dark rounded">{$item->getLabel()}</a>
+                    </li>
+                {/foreach}
+            </ul>
+        </div>
+    </li>
+    {/foreach}
+  </ul>
