@@ -146,8 +146,6 @@ class OW_MobileApplication extends OW_Application
 
         $document->addStyleSheet(OW::getPluginManager()->getPlugin('base')->getStaticCssUrl() . 'mobile.css' . '?' . OW::getConfig()->getValue('base',
                 'cachedEntitiesPostfix'), 'all', -100);
-        $document->addStyleSheet(OW::getPluginManager()->getPlugin('base')->getStaticCssUrl() . 'bootstrap/bootstrap.css' . '?' . OW::getConfig()->getValue('base',
-                'cachedEntitiesPostfix'), 'all', -90);
         $document->addStyleSheet(OW::getThemeManager()->getCssFileUrl(true) . '?' . OW::getConfig()->getValue('base',
                 'cachedEntitiesPostfix'), 'all', (-90));
 

@@ -214,6 +214,9 @@ class OW_Application
         $viewRenderer->assignVar('bottomPoweredByLink',
             '<a href="https://developers.oxwall.com/" target="_blank" title="Powered by Oxwall Community Software"><img src="' . $currentThemeImagesDir . 'powered-by-oxwall.png" alt="Oxwall Community Software" /></a>');
 
+        $viewRenderer->assignVar('oxwallplus',
+            '<a href="https://oxwallplus.com/" target="_blank" title="Powered by OxwallPlus"><img src="' . $currentThemeImagesDir . 'powered-by-oxwall.png" alt="OxwallPlus Community Software" /></a>');
+
         if(function_exists('ow_service_actions')) {
             call_user_func('ow_service_actions');
         }
@@ -324,8 +327,6 @@ class OW_Application
 
         $document->addStyleSheet(OW::getPluginManager()->getPlugin('base')->getStaticCssUrl() . 'ow.css' . '?' . OW::getConfig()->getValue('base',
                 'cachedEntitiesPostfix'), 'all', -100);
-        $document->addStyleSheet(OW::getPluginManager()->getPlugin('base')->getStaticCssUrl() . 'bootstrap/bootstrap.css' . '?' . OW::getConfig()->getValue('base',
-                'cachedEntitiesPostfix'), 'all', -90);
         $document->addStyleSheet($themeManager->getCssFileUrl() . '?' . OW::getConfig()->getValue('base',
                 'cachedEntitiesPostfix'), 'all', (-90));
 
