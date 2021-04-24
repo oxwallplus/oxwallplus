@@ -17,7 +17,7 @@ class ELEMENT_Select extends ELEMENT_Invitation
     public function __construct($name) {
         parent::__construct($name);
 
-        $this->addAttribute('class', 'custom-select');
+        $this->addAttribute('class', 'form-select');
         $this->setInvitation(OW::getLanguage()->text('base', 'form_element_select_field_invitation_label'));
     }
 
