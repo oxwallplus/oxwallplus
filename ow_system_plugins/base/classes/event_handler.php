@@ -146,11 +146,9 @@ class BASE_CLASS_EventHandler
         $document = OW::getDocument();
         $pluginManager = OW::getPluginManager();
         
-        $document->addStyleSheet($pluginManager->getPlugin('base')->getStaticCssUrl() . 'bootstrap/toggle.css', 'all', -90);
         $document->addStyleSheet($pluginManager->getPlugin('base')->getStaticCssUrl() . 'select2/select2.min.css', 'all', -90);
         $document->addStyleSheet($pluginManager->getPlugin('base')->getStaticCssUrl() . 'select2/select2-bootstrap.min.css', 'all', -90);
         
-        $document->addScript($pluginManager->getPlugin('base')->getStaticJsUrl() . 'bootstrap/toggle.js', 'text/javascript', (-89));
         $document->addScript($pluginManager->getPlugin('base')->getStaticJsUrl() . 'select2/select2.min.js', 'text/javascript', (-89));
         
     }

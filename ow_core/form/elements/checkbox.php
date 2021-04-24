@@ -10,63 +10,61 @@
 
 class ELEMENT_Checkbox extends FORM_Element
 {
-
-    protected $toggle = false;
+    protected $switch = false;
+    protected $value = false;
     
-    public function __construct($name) {
+    public function __construct(string $name)
+    {
         parent::__construct($name);
 
         $this->addAttribute('type', 'checkbox');
         $this->attributes['class'] = 'form-check-input';
     }
 
-    public function setValue($value) {
-        if((bool) $value) {
-            $this->value = true;
-        } else {
-            $this->value = null;
-        }
-
+    public function setValue($value): self
+    {
+        $this->value = (bool) $value;
         return $this;
     }
 
-    public function getElementJs() {
+    public function getElementJs(): string
+    {
         $jsString = "var formElement = new OwCheckboxField(" . json_encode($this->getId()) . ", " . json_encode($this->getName()) . ");";
 
-        return $jsString.$this->generateValidatorAndFilterJsCode("formElement");
+        return $jsString . $this->generateValidatorAndFilterJsCode("formElement");
     }
 
-    public function setToggle($value) {
-        if((bool) $value) {
-            $this->toggle = true;
-        } else {
-            $this->toggle = null;
-        }
+    public function setSwitch(): self
+    {
+        $this->switch = true;
+        return $this;
     }
     
-    public function renderLabel() {
-        if($this->toggle) {
+    public function renderLabel(): ?string
+    {
+        if ($this->switch) {
             return parent::renderLabel();
         } else {
             return '';
         }
     }
     
-    public function renderInput($params = null) {
+    public function renderInput($params = null): string
+    {
         parent::renderInput($params);
 
-        if($this->value && $this->value === true) {
+        if ($this->value) {
             $this->addAttribute(self::ATTR_CHECKED);
         }
         
-        if($this->toggle) {
-            $this->addAttribute("data-toggle", "toggle");
+        $output = '<div class="form-check';
+        if ($this->switch) {
+            $output .= ' form-switch';
         }
-        
-        $output = '<div class="form-check">';
+        $output .= '">';
         $output .= UTIL_HtmlTag::generateTag('input', $this->attributes);
-        if(!$this->toggle) {
-            $output .= '&nbsp;<label class="form-check-label" for="'.$this->getId().'">'.$this->getLabel().'</label>';
+        if (!$this->switch) {
+            $output .= ' <label class="form-check-label" for="'.$this->getId().'">'.$this->getLabel().'</label>';
         }
         $output .= '</div>';
         
