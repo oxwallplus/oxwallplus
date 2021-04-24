@@ -3,6 +3,9 @@
     <key name="enable_captcha">
         <value>Enable Captcha</value>
     </key>
+    <key name="captcha_type">
+        <value>Captcha Type</value>
+    </key>
     <key name="captcha_label">
         <value>Enter Captcha</value>
     </key>
