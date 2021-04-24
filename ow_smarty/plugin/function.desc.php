@@ -53,6 +53,5 @@ function smarty_function_desc( $params )
         throw new LogicException('No input named `' . $params['name'] . '` in form !');
     }
 
-    return ($input->getDescription() ? 
-        UTIL_HtmlTag::generateTag('span', array('id' => $input->getId() . '_desc', 'class' => 'form-text'), true, $input->getDescription()) : '');
+    return $input->getDescription(); 
 }
