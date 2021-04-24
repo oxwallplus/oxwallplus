@@ -3,7 +3,7 @@
     <type>core</type>
     <name>Oxwall Plus community software</name>
     <key>oxwall</key>
-    <build>20001</build>
+    <build>20002</build>
     <version>2.0.0</version>
     <copyright>Copyright 2018 ArtMedia. All rights reserved.</copyright>
     <license>Common Public Attribution License Version 1.0</license>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="security" label="Security" language_tag="en" language_label="English">
+    <key name="captcha_type">
+        <value>Captcha Type</value>
+    </key>
+</prefix>
