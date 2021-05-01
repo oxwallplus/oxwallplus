@@ -27,10 +27,10 @@ try {
     $query = "RENAME TABLE `{$prefix}base_db_cache` TO `{$prefix}base_cache`";
     $dbo->query($query);
     
-    $query = "INSERT INTO `{$prefix}base_plugin` (`id`, `title`, `description`, `module`, `key`, `developerKey`, `isSystem`, `isActive`, `adminSettingsRoute`, `uninstallRoute`, `build`, `update`, `licenseKey`, `licenseCheckTimestamp`) VALUES (NULL,'Performance','Performance Plugin','performance','performance','',1,1,NULL,NULL,10000,0,NULL,NULL)";
+    $query = "INSERT INTO `{$prefix}base_plugin` (`id`, `title`, `description`, `module`, `key`, `developerKey`, `isSystem`, `isActive`, `adminSettingsRoute`, `uninstallRoute`, `build`, `update`, `licenseKey`, `licenseCheckTimestamp`) VALUES (NULL,'Performance','Performance Plugin','performance','performance','',1,1,NULL,NULL,1,0,NULL,NULL)";
     $dbo->query($query);
     
-    $query = "INSERT INTO `{$prefix}base_plugin` (`id`, `title`, `description`, `module`, `key`, `developerKey`, `isSystem`, `isActive`, `adminSettingsRoute`, `uninstallRoute`, `build`, `update`, `licenseKey`, `licenseCheckTimestamp`) VALUES (NULL,'Localization','Localization Plugin','localization','localization','',1,1,NULL,NULL,10000,0,NULL,NULL)";
+    $query = "INSERT INTO `{$prefix}base_plugin` (`id`, `title`, `description`, `module`, `key`, `developerKey`, `isSystem`, `isActive`, `adminSettingsRoute`, `uninstallRoute`, `build`, `update`, `licenseKey`, `licenseCheckTimestamp`) VALUES (NULL,'Localization','Localization Plugin','localization','localization','',1,1,NULL,NULL,1,0,NULL,NULL)";
     $dbo->query($query);
     
     $query = "ALTER TABLE `{$prefix}base_question_value` CHANGE `value` `value` BIGINT(20) UNSIGNED NOT NULL DEFAULT '0';";

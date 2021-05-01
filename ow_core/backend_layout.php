@@ -36,6 +36,6 @@ class OW_BackendLayout extends OW_MasterPage
 
         $this->setTemplate(OW::getThemeManager()->getMasterPageTemplate(OW_MasterPage::TEMPLATE_ADMIN));
 
-        $this->addComponent('menu', new ADMIN_CMP_Menu());
+        $this->addComponent('menu', new CORE_CMP_AdminSidebarMenu());
     }
 }

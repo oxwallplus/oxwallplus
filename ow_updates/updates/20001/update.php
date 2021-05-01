@@ -17,7 +17,7 @@ $nav = Updater::getNavigationService();
 try {    
     $nav->addMenuItem(OW_Navigation::ADMIN_SETTINGS, 'security.admin', 'security', 'sidebar_menu_security', OW_Navigation::VISIBLE_FOR_ALL);
     
-    $query = "INSERT INTO `{$prefix}base_plugin` (`id`, `title`, `description`, `module`, `key`, `developerKey`, `isSystem`, `isActive`, `adminSettingsRoute`, `uninstallRoute`, `build`, `update`, `licenseKey`, `licenseCheckTimestamp`) VALUES (NULL,'Security','Security Plugin','security','security','',1,1,NULL,NULL,10000,0,NULL,NULL)";
+    $query = "INSERT INTO `{$prefix}base_plugin` (`id`, `title`, `description`, `module`, `key`, `developerKey`, `isSystem`, `isActive`, `adminSettingsRoute`, `uninstallRoute`, `build`, `update`, `licenseKey`, `licenseCheckTimestamp`) VALUES (NULL,'Security','Security Plugin','security','security','',1,1,NULL,NULL,1,0,NULL,NULL)";
     $dbo->query($query);
     
     $query = "UPDATE `{$prefix}base_config` SET `key` = 'localization', `name` = 'siteTimezone' WHERE `key` = 'base' AND `name` = 'site_timezone'";

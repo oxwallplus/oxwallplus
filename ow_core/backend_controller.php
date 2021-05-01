@@ -21,6 +21,22 @@ abstract class OW_BackendController extends OW_ActionController
             $document = OW::getDocument();
             $document->setMasterPage(new OW_BackendLayout());
             $this->setPageTitle(OW::getLanguage()->text('admin', 'page_default_title'));
+
+            $document->addScript(
+                OW::getPluginManager()->getPlugin('core')->getStaticJsUrl() . 'popper.min.js',
+                'text/javascript',
+                (-99)
+            );
+            $document->addScript(
+                OW::getPluginManager()->getPlugin('core')->getStaticJsUrl() . 'bootstrap.min.js',
+                'text/javascript',
+                (-98)
+            );
+            $document->addScript(
+                OW::getPluginManager()->getPlugin('core')->getStaticJsUrl() . 'fontawesome-all.min.js',
+                'text/javascript',
+                (-97)
+            );
         }
     }
 }

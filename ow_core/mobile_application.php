@@ -207,12 +207,6 @@ class OW_MobileApplication extends OW_Application
             'text/javascript', (-100));
         $document->addScript(OW::getPluginManager()->getPlugin('base')->getStaticJsUrl() . 'jquery/jquery-migrate.min.js',
             'text/javascript', (-100));
-        $document->addScript(OW::getPluginManager()->getPlugin('base')->getStaticJsUrl() . 'popper/popper.min.js',
-            'text/javascript', (-99));
-        $document->addScript(OW::getPluginManager()->getPlugin('base')->getStaticJsUrl() . 'bootstrap/bootstrap.min.js',
-            'text/javascript', (-98));
-        $document->addScript(OW::getPluginManager()->getPlugin('base')->getStaticJsUrl() . 'fontawesome/fontawesome-all.min.js',
-            'text/javascript', (-97));
         $document->addScript(OW::getPluginManager()->getPlugin('base')->getStaticJsUrl() . 'mobile.js?' . OW::getConfig()->getValue('base',
                 'cachedEntitiesPostfix'), 'text/javascript', (-50));
         OW::getEventManager()->bind(OW_EventManager::ON_AFTER_REQUEST_HANDLE, array($this, 'onBeforeDocumentRender'));
