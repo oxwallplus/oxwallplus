@@ -4,14 +4,14 @@ Libraries: Updating guzzlehttp/promises (v1.3.1 => 1.4.1)
 Libraries: Installing symfony/polyfill-php72 (v1.22.1)         
 Libraries: Installing symfony/polyfill-intl-normalizer (v1.22.1)         
 Libraries: Installing symfony/polyfill-intl-idn (v1.22.1)         
-Libraries: Updating symfony/polyfill-mbstring (v1.8.0 => v1.22.1): Loading from cache
+Libraries: Updating symfony/polyfill-mbstring (v1.8.0 => v1.22.1)
 Libraries: Updating guzzlehttp/guzzle (6.3.3 => 6.5.5)         
 Libraries: Updating smarty/smarty (v3.1.32 => v3.1.39)         
 Libraries: Updating phpmailer/phpmailer (v6.0.5 => v6.4.1)         
 Libraries: Installing psr/container (1.1.1)         
 Libraries: Installing symfony/service-contracts (v2.4.0)         
-Libraries: Installing symfony/polyfill-php80 (v1.22.1): Loading from cache
-Libraries: Installing symfony/polyfill-php73 (v1.22.1): Loading from cache
+Libraries: Installing symfony/polyfill-php80 (v1.22.1)
+Libraries: Installing symfony/polyfill-php73 (v1.22.1)
 Libraries: Updating symfony/console (v4.1.0 => v4.4.21)         
 Libraries: Updating gettext/languages (2.4.0 => 2.6.0)         
 Libraries: Updating gettext/gettext (v4.5.0 => v4.8.4)         
