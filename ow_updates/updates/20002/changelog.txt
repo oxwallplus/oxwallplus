@@ -18,3 +18,7 @@ Libraries: Updating gettext/gettext (v4.5.0 => v4.8.4)
 Libraries: Updating matthiasmullie/path-converter (1.1.1 => 1.1.3)         
 Libraries: Updating matthiasmullie/minify (1.3.60 => 1.3.66)         
 Libraries: Updating google/recaptcha (1.1.3 => 1.2.4) 
+Core: New Admin Master Page and Admin Controller
+Libraries: Fix youtube thumbnails display
+Libraries: Fix get youtu.be url json data
+System Plugins: Added new Core plugin, which replace base & admin plugins in future
