@@ -1,6 +1,6 @@
 <?php
 //http://youtu.be/Aqyf2aYR1pQ
-OEmbed::addProvider( new OEmbedApiProvider('http://www.youtube.com/oembed?url=:url&format=json', array(
+OEmbed::addProvider( new OEmbedApiProvider('https://www.youtube.com/oembed?url=:url&format=json', array(
     '~youtube\.com/watch.+v=[\w-]+&?~',
     '~youtu.be\/[\w-]+~'
     ) ) );
