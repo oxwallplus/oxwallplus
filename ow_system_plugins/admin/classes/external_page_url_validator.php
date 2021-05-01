@@ -23,7 +23,7 @@ class ADMIN_CLASS_ExternalPageUrlValidator extends UrlValidator
 
         return "{
         	validate : function( value ){
-                if( $('#address2').attr('checked') &&  !value ){
+                if( $('#address2').prop('checked') &&  !value ){
                 	throw " . json_encode(OW::getLanguage()->text('base', 'form_validator_required_error_message')) . ";
     			}
 

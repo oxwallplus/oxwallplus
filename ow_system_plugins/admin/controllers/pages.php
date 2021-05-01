@@ -552,7 +552,7 @@ class PageTitleValidator extends OW_Validator
 
         return "{
         	validate : function( value ){
-                if( $('#address1').attr('checked') &&  !value ){ throw " . json_encode($this->getError()) . "; }
+                if( $('#address1').prop('checked') &&  !value ){ throw " . json_encode($this->getError()) . "; }
                 return true;
         },
         	getErrorMessage : function(){ return " . json_encode($this->getError()) . " }
@@ -639,7 +639,7 @@ class LocalPageUrlValidator extends OW_Validator
 
         return "{
         	validate : function( value ){
-                if( $('#address1').attr('checked') &&  !value ){
+                if( $('#address1').prop('checked') &&  !value ){
                 	throw " . json_encode($this->getError()) . ";
     			}
 
@@ -679,7 +679,7 @@ class ExternalPageUrlValidator extends UrlValidator
 
         return "{
         	validate : function( value ){
-                if( $('#address2').attr('checked') &&  !value ){
+                if( $('#address2').prop('checked') &&  !value ){
                 	throw " . json_encode(OW::getLanguage()->text('base', 'form_validator_required_error_message')) . ";
     			}
 
