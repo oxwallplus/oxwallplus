@@ -98,9 +98,8 @@ class OW_Application
         if(OW::getUser()->isAuthenticated()) {
             $userId = OW::getUser()->getId();
             $timeZone = BOL_PreferenceService::getInstance()->getPreferenceValue('timeZoneSelect', $userId);
-
             if(!empty($timeZone)) {
-                date_default_timezone_set($timeZone);
+                date_default_timezone_set(json_decode($timeZone));
             }
         }
         if(empty($timeZone)) {
