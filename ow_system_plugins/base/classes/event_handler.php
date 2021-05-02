@@ -97,9 +97,7 @@ class BASE_CLASS_EventHandler
         $eventManager->bind("base.user_list.get_questions", array($this, 'onGetUserListQuestions'));
         $eventManager->bind("base.user_list.get_field_data", array($this, 'onGetUserListFieldValue'));
         $eventManager->bind("base.sitemap.get_urls", array($this, 'onSitemapGetUrls'));
-        $eventManager->bind("base.provide_page_meta_info", array($this, 'onProvideMetaInfoForPage'));
-        
-        $eventManager->bind(OW_EventManager::ON_FINALIZE, array($this, 'onFinalize'));
+        $eventManager->bind("base.provide_page_meta_info", array($this, 'onProvideMetaInfoForPage'));        
     }
 
     public function init()
@@ -140,17 +138,6 @@ class BASE_CLASS_EventHandler
         {
             $eventManager->bind('base.add_page_content', array($this, 'addPageBanner'));
         }
-    }
-    
-    public function onFinalize(OW_EVENT $event) {
-        $document = OW::getDocument();
-        $pluginManager = OW::getPluginManager();
-        
-        $document->addStyleSheet($pluginManager->getPlugin('base')->getStaticCssUrl() . 'select2/select2.min.css', 'all', -90);
-        $document->addStyleSheet($pluginManager->getPlugin('base')->getStaticCssUrl() . 'select2/select2-bootstrap.min.css', 'all', -90);
-        
-        $document->addScript($pluginManager->getPlugin('base')->getStaticJsUrl() . 'select2/select2.min.js', 'text/javascript', (-89));
-        
     }
 
     public function onCollectQuickLinks( BASE_CLASS_EventCollector $event )
