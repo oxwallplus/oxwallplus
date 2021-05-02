@@ -97,12 +97,16 @@ class ELEMENT_Range extends FORM_Element
             $this->options['value'] = array_values($this->value);
         }
 
-        OW::getDocument()->addScript(OW::getPluginManager()->getPlugin("base")->getStaticJsUrl() . 'bootstrap/slider.js');
-        OW::getDocument()->addStyleSheet(OW::getPluginManager()->getPlugin("base")->getStaticCssUrl() . 'bootstrap/slider.min.css');
+        $document = OW::getDocument();
+        $pluginManager = OW::getPluginManager();
+        $core = CORE_BOL_Service::KEY;
+
+        $document->addScript($pluginManager->getPlugin($core)->getStaticJsUrl() . 'bootstrap-slider.min.js');
+        $document->addStyleSheet($pluginManager->getPlugin($core)->getStaticCssUrl() . 'bootstrap-slider.min.css');
         
         $this->options['range'] = true;
         $this->options['tooltip'] = 'always';
-        OW::getDocument()->addOnloadScript("
+        $document->addOnloadScript("
             $(function () {
                 $('#".$this->getId()."').bootstrapSlider(".json_encode($this->options).");
             });
