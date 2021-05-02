@@ -92,12 +92,16 @@ class ELEMENT_RangeYear extends FORM_Element
         }
         $to->setPrefix($language->text('base', 'form_element_to'));
         
-        OW::getDocument()->addScript(OW::getPluginManager()->getPlugin("base")->getStaticJsUrl() . 'bootstrap/moment.min.js');
-        OW::getDocument()->addScript(OW::getPluginManager()->getPlugin("base")->getStaticJsUrl() . 'bootstrap/datetimepicker.min.js');
-        OW::getDocument()->addStyleSheet(OW::getPluginManager()->getPlugin("base")->getStaticCssUrl() . 'bootstrap/datetimepicker.min.css');
+        $document = OW::getDocument();
+        $pluginManager = OW::getPluginManager();
+        $core = CORE_BOL_Service::KEY;
+
+        $document->addScript($pluginManager->getPlugin($core)->getStaticJsUrl() . 'moment.min.js');
+        $document->addScript($pluginManager->getPlugin($core)->getStaticJsUrl() . 'bootstrap-datetimepicker.min.js');
+        $document->addStyleSheet($pluginManager->getPlugin($core)->getStaticCssUrl() . 'bootstrap-datetimepicker.min.css');
         
         $this->options['format'] = 'YYYY';
-        OW::getDocument()->addOnloadScript("
+        $document->addOnloadScript("
             $(function () {
                 $('#".$from->getId()."').datetimepicker(".json_encode($this->options).");
                 $('#".$to->getId()."').datetimepicker(".json_encode(array_merge($this->options, array('useCurrent' => false))).");

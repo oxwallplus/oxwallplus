@@ -102,12 +102,16 @@ class ELEMENT_Date extends ELEMENT_Invitation
     }
 
     public function renderInput($params = null) {
-        OW::getDocument()->addScript(OW::getPluginManager()->getPlugin("base")->getStaticJsUrl() . 'bootstrap/moment.min.js');
-        OW::getDocument()->addScript(OW::getPluginManager()->getPlugin("base")->getStaticJsUrl() . 'bootstrap/datetimepicker.min.js');
-        OW::getDocument()->addStyleSheet(OW::getPluginManager()->getPlugin("base")->getStaticCssUrl() . 'bootstrap/datetimepicker.min.css');
+        $document = OW::getDocument();
+        $pluginManager = OW::getPluginManager();
+        $core = CORE_BOL_Service::KEY;
+
+        $document->addScript($pluginManager->getPlugin($core)->getStaticJsUrl() . 'moment.min.js');
+        $document->addScript($pluginManager->getPlugin($core)->getStaticJsUrl() . 'bootstrap-datetimepicker.min.js');
+        $document->addStyleSheet($pluginManager->getPlugin($core)->getStaticCssUrl() . 'bootstrap-datetimepicker.min.css');
         
         $this->options['format'] = UTIL_DateTime::momentDateFormat($this->getDateFormat());
-        OW::getDocument()->addOnloadScript("
+        $document->addOnloadScript("
             $(function () {
                 $('#".$this->getId()."').datetimepicker(".json_encode($this->options).");
             });
